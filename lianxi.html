@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>供应商注册 - 全球采购平台</title>
+	<link rel="shortcut icon" type="image/x-icon" media="all" href="img/gpplogo.png">
+	<link rel="stylesheet" type="css/style2.css" />
+	<link rel="stylesheet" type="text/css" href="css/element_ui.css" />
+	<link rel="stylesheet" type="text/css" href="css/login.css" />
+</head>
+
+<body  style="background-image : url(img/下载.png)">
+<div id="component">
+	<div class="main-container clearfix">
+		<!-- header -->
+		<div class="header">
+			<div class="bg-header clearfix">
+				<ul>
+					<div class="logo"> <img src="img/gpplogo.png" /></div>
+				</ul>
+				<ul class="name clearfix">
+					<li><a class="link" href="/gpp">锦江都城</a></li>
+					<li><a class="link" href="/gpp">铂涛</a></li>
+					<li><a href="/gpp">维也纳</a></li>
+				</ul>
+				<div class="language">
+					<img src="img/language.svg"/>
+	<div class="header-selector">
+		<span id="current-language" value="zh">中文</span>
+		<div id="lang-selector" class="selector-options">
+			<div value="zh" class="option active"
+							 lang="zh">中文-ZH</div>
+					<div value="en" lang="en"  class="option">
+								英语-EN</div>
+					</div>
+	</div>
+
+</div>
+			</div>
+		</div>
+		<!-- end header -->
+		
+		<div class="foot" style="position: absolute;top: 150px;">
+			<div class="page_footer">
+	<div class="friendlink clearfix">
+		<table>
+			<tbody>
+			<tr>
+				<th style="padding-right: 55px" >
+							关于GPP</th>
+				<th style="padding-right: 55px" >
+							服务指南</th>
+				<th style="padding-right: 55px" >
+							平台政策</th>
+				<th style="padding-right: 55px" >
+							商务合作</th>
+				</tr>
+			<tr>
+				<td style="padding-right: 55px" >
+						<a href="/announcement/detail?pk=GPP2018120400001">
+									公司简介</a>
+							<br>
+						<a href="/">
+									要点新闻</a>
+							<br>
+						<a href="/">
+									游客首页</a>
+							<br>
+						</td>
+				<td style="padding-right: 55px" >
+						<a href="/">
+									使用指导</a>
+							<br>
+						<a href="/">
+									常见问题</a>
+							<br>
+						<a href="/announcement/detail?pk=GPP2018120400003">
+									客户服务</a>
+							<br>
+						</td>
+				<td style="padding-right: 55px" >
+						<a href="/announcement/detail?pk=GG20191015031152">
+									服务条款</a>
+							<br>
+						<a href="/announcement/detail?pk=GG20190611184031">
+									隐私政策</a>
+							<br>
+						<a href="/announcement/detail?pk=GG20190618200866">
+									注册协议</a>
+							<br>
+						<a href="/announcement/detail?pk=GG20191015031180">
+									平台交易</a>
+							<br>
+						<a href="/announcement/detail?pk=GG20191017309644">
+									营业执照</a>
+							<br>
+						</td>
+				<td style="padding-right: 55px" >
+						<a href="http://hotel.bestwehotel.com/">
+									Wehotel</a>
+							<br>
+						<a href="https://www.plateno.com/activity/shopguide.html">
+									铂涛旅行</a>
+							<br>
+						<a href="http://www.wyn88.com/">
+									维也纳</a>
+							<br>
+						</td>
+				</tr>
+			</tbody>
+		</table>
+		<div class="friendlink-right-first">
+			<img class="download-pic" src="img/WeChat.png"/>
+			<div class="title">
+				<img class="tip-pic" style="width: 80px; height: auto" src="img/wechat-white.png"/>
+				</div>
+		</div>
+		<div class="friendlink-right">
+			<img class="download-pic" src="img/Android.png"/>
+			<div class="title">
+				<img class="tip-pic" style="width: 80px; height: auto" src="img/android-white.png"/>
+				</div>
+		</div>
+		<div class="friendlink-right">
+			<img class="download-pic" src="img/Ios.png"/>
+			<div class="title">
+				<img class="tip-pic" style="width: 80px; height: auto" src="img/ios-white.png"/>
+				</div>
+		</div>
+	</div>
+	<div class="foot-copyright" style="position: absolute;top: 300px;"><br>锦江都城热线：021-20375267 | 铂涛热线：400-930-0051|  维也纳热线：0755-88291666-6216  <br> 锦江都城邮箱：gppservice@wehotelpurchase.com| 铂涛邮箱：gp_servicejyh@platenogroup.com| 维也纳邮箱：gylservice@wyn88.com <br> Copyright © 2018 上海锦江国际酒店发展股份有限公司 版权所有 | 粤ICP备18144554号-1</div>
+</div>
+
+</div>
+	</div>
+</div>
+
+<script src="/_ui/responsive/common/jjgpp/js/jquery-2.1.1.min.js"></script>
+<script type="text/javascript" src="/_ui/responsive/common/jjgpp/js/vue.min-2.5.16.js"></script>
+<script type="text/javascript" src="/_ui/responsive/common/jjgpp/js/login/element_ui.js"></script>
+<script type="text/javascript" src="/_ui/responsive/common/jjgpp/js/login/register.js"></script>
+<script>
+
+    var contextPath = '\/marketplace\/zh';
+    $(".header-selector .selector-options").hide();
+
+    $(document).click(function () {
+        $(".header-selector .selector-options").hide();
+    })
+
+    $(".header-selector").click(function (e) {
+        e.stopPropagation();
+        $(this).find(".selector-options").show();
+    })
+
+    $("#lang-selector .option").click(function(){
+        var value = $(this).attr("value");
+        var current = $("#current-language").attr("value");
+        if(value != current){
+            var languageUrl = "/_s/language";
+            $.ajax({
+                url: languageUrl,
+                cache: false,
+                type: 'post',
+                data: {'old':current,'current':value},
+                success: function(data){
+                    window.location.href=data;
+                }
+            });
+        }
+    });
+</script>
+</body>
+
+</html>

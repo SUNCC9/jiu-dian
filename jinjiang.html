@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+		<style type="text/css">
+			#box1{
+				
+				text-align: center;
+				
+			}
+			p{
+				
+				text-align: center;
+				font-size: 20px;
+				font-weight: bolder;
+			}
+			
+		</style>
+	</head>
+	<body>
+		
+		<div id="box1" onclick="clicks()">
+		<p>欢迎光临 维纳斯酒店</p>
+		<button>请点击</button>	
+		</div>
+		
+		
+		<script type="text/javascript">
+			//onclick   box1
+			//innertext
+			//计数器
+			var i = 0;
+			
+			
+			function clicks(){
+					i+=1;	
+					
+				var doc = document.getElementById("box1");
+				
+				if(i==1){
+					doc.innerHTML="<p>您的信赖</p>"+
+								   "<p>是我们工作的动力之源</p>"
+								   +"<button>请点击</button>"
+					
+				}
+			
+				if(i==2){
+					doc.innerHTML="<p>您的舒适</p>"+
+								   "<p>是我们工作的幸福之源</p>"+"<button>请点击</button>"
+				}
+				if(i==3){
+					doc.innerHTML="<p>非常感谢</p>"+"<button>请点击</button>"
+								  
+				}
+				if(i==4){
+					doc.innerHTML="<p>致敬 拜拜</p>"
+								  
+				}
+				if(i==5){
+					doc.style.display="none";
+								  
+				}
+				
+			}
+			
+			
+			
+			
+		</script>
+	</body>
+</html>
